@@ -83,6 +83,7 @@ void tbc_chan_am(int b[], int m, int &tong_chanam) {
 }
 
 // XONG ĐỀ I
+//=======================================================================================================================================================
 
 void tich_chan(int b[], int m, int &tichchan) {
     tichchan = 1;
@@ -149,6 +150,9 @@ void tbc_sole_duong(int b[], int m, int &tong_leduong) {
     }
 }
 
+// Xong đề 2
+//=======================================================================================================================================================
+
 void uocchung_sau(int b[], int m) {
     int tonguoc = 0;
     for (int i = 0; i < m; i++) {
@@ -179,6 +183,9 @@ void vitri_nguyento(int b[], int m) {
     }
     cout << endl;
 }
+
+// Xong đề 3
+//=======================================================================================================================================================
 
 void vitri_sole(int b[], int m) {
     for (int i = 0; i < m; i++) {
@@ -235,10 +242,12 @@ void xuat_vi_tri_so_hoan_thien(int b[], int m) {
 }
 
 void tinhtong_boihai(int b[], int m, int &tongboihai) {
+    tongboihai = 0;
     for (int i = 0; i < m; i++) {
         if (b[i] % 2 == 0) {
-
+            tongboihai += b[i];
         }
     }
+    cout << "Tong boi hai cua mang nay la " << tongboihai << endl;
 }
 
